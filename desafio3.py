@@ -11,7 +11,7 @@ def organizar(libro):
         libros_a[i][1]=libros_a[i][1].strip().capitalize()
         libros_a[i][2]=libros_a[i][2].strip().capitalize()
         libros_a[i][3]=libros_a[i][3].strip().capitalize()
-    libros_b=sorted(libros_a,key=lambda x: (x[1],x[2],x[0]))
+    libros_b=sorted(libros_a,key=lambda a: (a[3],a[2],-a[0]))
     return libros_b
 
 def crear(ing):
